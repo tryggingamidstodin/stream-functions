@@ -1,0 +1,59 @@
+{
+  "name": "stream-functions",
+  "version": "1.0.0",
+  "description": "Core function (map, filter, flatten, buffer, promise-map) to use with streams",
+  "main": "js/index.js",
+  "types": "js/index.d.ts",
+  "scripts": {
+    "test": "mocha --recursive js/*.spec.js",
+    "lint": "tslint src/*",
+    "clean": "rm -rf js",
+    "compile": "tsc",
+    "build": "npm run lint && npm run clean && npm run compile",
+    "ci": "npm run build && npm run test",
+    "tdd": "mocha --exit -R min --require ts-node/register --recursive --watch-extensions ts --watch  src/*.spec.ts",
+    "format": "prettier --write 'src/*.ts'",
+    "format-verify": "prettier -l 'src/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tryggingamidstodin/stream-functions.git"
+  },
+  "keywords": [
+    "stream",
+    "util",
+    "helper",
+    "functions",
+    "map",
+    "buffer",
+    "flatten",
+    "promise",
+    "filter"
+  ],
+  "author": "bt.hugbunadargerd@tm.is",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.2",
+    "chai": "^4.2.0",
+    "ghooks": "^2.0.4",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run format-verify",
+      "pre-push": "npm run ci"
+    }
+  },
+  "files": [
+    "js"
+  ],
+  "dependencies": {
+    "stream": "0.0.2"
+  }
+}
