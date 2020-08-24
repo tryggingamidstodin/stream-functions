@@ -4,7 +4,7 @@ Core functions using Transform for usage in stream pipes.
 
 ## Minimal dependencies
 
-Depends only on the (stream)[https://www.npmjs.com/package/stream] library, ported straight from node.js core.
+Depends only on the [stream](https://www.npmjs.com/package/stream) library, ported straight from node.js core.
 
 ## Usage examples
 
