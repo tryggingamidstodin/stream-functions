@@ -52,7 +52,10 @@ describe("stream util", () => {
       .on("data", (data: any) => res.push(data))
       .on("finish", () => {
         try {
-          expect(res).to.eql([[2, 4], [8, 16]]);
+          expect(res).to.eql([
+            [2, 4],
+            [8, 16],
+          ]);
           done();
         } catch (err) {
           done(err);
@@ -64,7 +67,10 @@ describe("stream util", () => {
   });
   it("should flatten", (done: any) => {
     const readable = new Readable({ objectMode: true });
-    const source = [[2, 4], [8, 16]];
+    const source = [
+      [2, 4],
+      [8, 16],
+    ];
     const res: any[] = [];
     readable
       .pipe(flatten())

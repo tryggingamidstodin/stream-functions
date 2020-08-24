@@ -1,7 +1,7 @@
 {
   "name": "stream-functions",
   "version": "1.0.0",
-  "description": "Core function (map, filter, flatten, buffer, promise-map) to use with streams",
+  "description": "Core functions (map, filter, flatten, buffer, promise-map) to use with streams",
   "main": "js/index.js",
   "types": "js/index.d.ts",
   "scripts": {
@@ -33,16 +33,16 @@
   "author": "bt.hugbunadargerd@tm.is",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.12.2",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.6.0",
     "chai": "^4.2.0",
     "ghooks": "^2.0.4",
-    "mocha": "^5.2.0",
-    "prettier": "^1.14.3",
-    "ts-node": "^7.0.1",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "mocha": "^8.1.1",
+    "prettier": "^2.1.0",
+    "ts-node": "^9.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.2"
   },
   "config": {
     "ghooks": {

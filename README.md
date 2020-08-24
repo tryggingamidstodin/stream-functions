@@ -1,5 +1,13 @@
 # Helper functions for streams in node js.
 
+Core functions using Transform for usage in stream pipes.
+
+## Minimal dependencies
+
+Depends only on the (stream)[https://www.npmjs.com/package/stream] library, ported straight from node.js core.
+
+## Usage examples
+
 ### map
 
 ```
@@ -31,6 +39,6 @@ somestream.pipe(buffer(buffersize))
 ### promiseMap
 
 ```
-import { map } from 'stream-function'
+import { promiseMap } from 'stream-function'
 somestream.pipe(promiseMap(somepromisefunction))
 ```
