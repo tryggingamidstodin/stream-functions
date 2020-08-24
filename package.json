@@ -1,6 +1,6 @@
 {
   "name": "stream-functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core functions (map, filter, flatten, buffer, promise-map) to use with streams",
   "main": "js/index.js",
   "types": "js/index.d.ts",
